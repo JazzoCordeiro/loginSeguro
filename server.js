@@ -4,7 +4,7 @@ import cors from 'cors'
 
 const app = express();
 const prisma = new PrismaClient();
-app.use(cors());
+app.use(cors('http://localhost:5173'));
 app.use(express.json());
 
 // Criar usuário
